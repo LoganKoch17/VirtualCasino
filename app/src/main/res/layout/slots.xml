@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="switchToMain"
+        android:text="@string/back_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="159dp"
+        android:onClick="stopReels"
+        android:text="STOP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="67dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/reel_1"
+            android:layout_width="92dp"
+            android:layout_height="268dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/slot_image1"
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
+
+            <ImageView
+                android:id="@+id/slot_image2"
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
+
+            <ImageView
+                android:id="@+id/slot_image3"
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/reel_2"
+            android:layout_width="92dp"
+            android:layout_height="268dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="134dp"
+            tools:layout_editor_absoluteY="107dp">
+
+            <ImageView
+                android:id="@+id/slot_image4"
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
+
+            <ImageView
+                android:id="@+id/slot_image5"
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
+
+            <ImageView
+                android:id="@+id/slot_image6"
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/reel_3"
+            android:layout_width="92dp"
+            android:layout_height="268dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="134dp"
+            tools:layout_editor_absoluteY="107dp">
+
+            <ImageView
+                android:id="@+id/slot_image7"
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
+
+            <ImageView
+                android:id="@+id/slot_image8"
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
+
+            <ImageView
+                android:id="@+id/slot_image9"
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/spin_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="spinReels"
+        android:text="Spin!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/temp_balance_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="21dp"
+        android:text="Balance: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

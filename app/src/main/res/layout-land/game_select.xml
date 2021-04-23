@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/background_video"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/slots_button"
+        android:layout_width="100dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginBottom="181dp"
+        android:background="#00000000"
+        android:onClick="switchToSlots"
+        android:scaleType="fitCenter"
+        android:src="@drawable/slots"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/roulette_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="181dp"
+        android:background="#00000000"
+        android:onClick="switchToRoulette"
+        android:scaleType="fitCenter"
+        android:src="@drawable/roulette"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/blackjack_button"
+        app:layout_constraintStart_toEndOf="@+id/slots_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/blackjack_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="181dp"
+        android:background="#00000000"
+        android:onClick="switchToBlackjack"
+        android:scaleType="fitCenter"
+        android:src="@drawable/blackjack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/funds_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="128dp"
+        android:text="@string/funds"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

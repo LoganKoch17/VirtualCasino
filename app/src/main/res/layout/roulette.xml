@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="switchToMain"
+        android:text="@string/back_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/random_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="193dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="200dp"
+        android:text="Winning Number: "
+        app:layout_constraintEnd_toStartOf="@+id/roulette_output"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/roulette_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="222dp"
+        android:text="Result: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/temp_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:text="Balance:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="741dp"
+        android:layout_height="263dp"
+        android:layout_marginTop="148dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_spin"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F44336"
+                android:text="@string/bet"
+                android:onClick="bet"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="clearBets"
+                android:text="@string/clear"
+                android:textColor="#F44336"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btn_add10"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="add10"
+                android:text="@string/add10"
+                android:textColor="#454040"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btn_add50"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="add50"
+                android:text="@string/add50"
+                android:textColor="#454040"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btn_add100"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="add100"
+                android:text="@string/add100"
+                android:textColor="#454040"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btn_add500"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="add500"
+                android:text="@string/add500"
+                android:textColor="#454040"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btn_add1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="add1000"
+                android:text="@string/add1000"
+                android:textColor="#454040"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btn_half"
+                android:layout_width="68dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="halfBets"
+                android:text="@string/half"
+                android:textColor="#454040"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btn_double"
+                android:layout_width="51dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="doubleBets"
+                android:text="x2"
+                android:textColor="#454040"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btn_max"
+                android:layout_width="68dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="maxBets"
+                android:text="@string/max"
+                android:textColor="#03A9F4"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_1to7"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="#F44336"
+                android:onClick="bet1to7"
+                android:text="1 to 7"
+                android:textColorLink="#009688" />
+
+            <Button
+                android:id="@+id/btn_0"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="36dp"
+                android:backgroundTint="#4CAF50"
+                android:onClick="bet0"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/btn_8to14"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="#454040"
+                android:onClick="bet8to14"
+                android:text="8 to 14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/wager_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#4CAF50"
+                android:text="@string/wager"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/betAmount_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#4CAF50"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
